@@ -24,18 +24,14 @@ function RaceList() {
     return (
         <div>
             <div class="row">
-                <div class="col-10">
-                    <Link to={"./"}>
-                        Back
-                    </Link>
-                </div>
+                <div class="col-10"> Back </div>
                 <InputGroup className="col-2">
                     <Button class="btn btn-info" id="button-addon2" onClick={handleSort}>
                         Sort
                     </Button>
                 </InputGroup>
-
             </div>
+
             {ras.loading && <Spinner animation="border" variant="primary" />}
             {ras.loadingError && <span className="text-danger">ERROR: {ras.error}</span>}
 
@@ -46,7 +42,6 @@ function RaceList() {
                             <Card className="d" style={{ width: "15rem" }}>
                                 <Card.Body>
                                     <Card.Title>{em.position}</Card.Title>
-
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">{em.Driver.givenName + " " + em.Driver.familyName}</li>
                                         <li class="list-group-item">points: {em.points}</li>
@@ -60,7 +55,6 @@ function RaceList() {
                     })}
                 </div>
             }
-
         </div>
     );
 }

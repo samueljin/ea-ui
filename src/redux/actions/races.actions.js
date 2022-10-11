@@ -15,8 +15,7 @@ function sortByPosition(sortOrder) {
         })
 
         axios.get(apiConstants.GET_RACES_URL +  '2021/1/results?sort='+sortOrder )
-            .then(response => {
-               
+            .then(response => {              
                 if (response.status == 200) {
                     dispatch({
                         type: webConstants.RACE_SORT_SUCCESS,

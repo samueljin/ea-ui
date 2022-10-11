@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test suite click sort button to refresh the page 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-10"
+    >
+       Back 
+    </div>
+    <div
+      className="col-2 input-group"
+    >
+      <button
+        class="btn btn-info"
+        className="btn btn-primary"
+        disabled={false}
+        id="button-addon2"
+        onClick={[Function]}
+        type="button"
+      >
+        Sort
+      </button>
+    </div>
+  </div>
+</div>
+`;
